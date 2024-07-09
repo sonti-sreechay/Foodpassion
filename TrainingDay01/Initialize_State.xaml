@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>674,1758</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>674,1955</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Initialize_State_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -109,7 +109,7 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Initialize_State" sap:VirtualizedContainerService.HintSize="546,1693" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Initialize_State" sap:VirtualizedContainerService.HintSize="546,1890" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="blFileExist" />
     </Sequence.Variables>
@@ -134,13 +134,13 @@
         <Sequence sap2010:WorkflowViewState.IdRef="Sequence_4" />
       </If.Else>
     </If>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome: Rpa Challenge" sap:VirtualizedContainerService.HintSize="484,940" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="7afea5a8-172f-4f90-884a-dd5b157b4035" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome: Rpa Challenge" sap:VirtualizedContainerService.HintSize="484,1137" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="7afea5a8-172f-4f90-884a-dd5b157b4035" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,723" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,920" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -149,6 +149,17 @@
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download Excel'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Right" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://rpachallenge.com/" CVScreenId="c2b6661e-f281-463d-b6c8-c32133e4302a" ContentHash="0gVwJgqswkaJSq8242XbTg" CvTextArea="88, 545, 229, 14" CvTextArgument="DOWNLOAD EXCEL ," CvType="Text" DesignTimeRectangle="19, 535, 315, 36" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Download Excel'" FullSelectorArgument="&lt;webctrl aaname=' Download Excel cloud_download' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Download Excel cloud_download' tag='A' type='' class=' col s12 m12 l12 btn waves-effect waves-light uiColorPrimary center' check:innerText='DOWNLOAD EXCEL&amp;#xA;cloud_download' /&gt;" Guid="49064c39-d2b0-470d-87d8-bff8546f496f" InformativeScreenshot="45837581240b829e162a5f6b3b6f6cad.png" Reference="ThIhO9gzQUajJEwHZP_S1g/4Pa1q3_U7kmtS0evrRe9hg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save Link As'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="b1a84c48-b9d6-4050-a6db-dab311d3ffab" ContentHash="yVlzgZ4hmkmFRYOvHRbPSQ" CvTextArea="43, 129, 71, 12" CvTextArgument="Save link as..." CvType="Text" DesignTimeRectangle="24, 121, 265, 28" DesignTimeScaleFactor="1" FriendlyName="'Save link as…'" FullSelectorArgument="&lt;ctrl name='Save link as…' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Save link as…' role='menu item' automationid='' check:text='Save link as…' /&gt;" Guid="5f892888-356a-48a8-bcda-8844ad8ea4dd" InformativeScreenshot="5a7ca7bbbbd3500e2b557bc324bf8b52.png" Reference="ThIhO9gzQUajJEwHZP_S1g/BxuJoi0cG0ehPGlleiMJWA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b1a84c48-b9d6-4050-a6db-dab311d3ffab" CvTextArea="43, 157, 95, 15" CvTextArgument="Copy link address" CvType="Text" DesignTimeRectangle="24, 149, 265, 28" FriendlyName="'Copy link address'" FullSelectorArgument="&lt;ctrl name='Copy link address' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Copy link address' role='menu item' automationid='' check:text='Copy link address' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[strFilePath+strFileName]" Version="V3">
