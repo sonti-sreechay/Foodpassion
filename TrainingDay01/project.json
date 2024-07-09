@@ -4,6 +4,7 @@
   "description": "Training Day 01",
   "main": "StateMachine01.xaml",
   "dependencies": {
+    "UiPath.Cryptography.Activities": "[1.5.0]",
     "UiPath.Excel.Activities": "[2.22.4]",
     "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.System.Activities": "[23.10.6]",

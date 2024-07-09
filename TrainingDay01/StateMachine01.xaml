@@ -83,7 +83,7 @@
         <av:PointCollection x:Key="ConnectorLocation">311,77.5 311,107.5 311.75,107.5 311.75,125.5</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <State x:Name="__ReferenceID3" DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="165,89" sap2010:WorkflowViewState.IdRef="State_2">
+    <State x:Name="__ReferenceID3" DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="587,892" sap2010:WorkflowViewState.IdRef="State_2">
       <State.Entry>
         <Sequence sap:VirtualizedContainerService.HintSize="541,504" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <sap:WorkflowViewStateService.ViewState>
@@ -107,7 +107,7 @@
                     <OutArgument x:TypeArguments="x:String">[strFileName]</OutArgument>
                   </ui:AssignOperation.To>
                   <ui:AssignOperation.Value>
-                    <InArgument x:TypeArguments="x:String">challenge_new.xlsx</InArgument>
+                    <InArgument x:TypeArguments="x:String">challenge.xlsx</InArgument>
                   </ui:AssignOperation.Value>
                 </ui:AssignOperation>
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
@@ -222,7 +222,7 @@
                     <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="(Not blSystemError) and (Not blBusinessError)" />
                   </Transition.Condition>
                   <Transition.To>
-                    <State x:Name="__ReferenceID0" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="496,338" sap2010:WorkflowViewState.IdRef="State_4" IsFinal="True">
+                    <State x:Name="__ReferenceID0" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="134,62" sap2010:WorkflowViewState.IdRef="State_4" IsFinal="True">
                       <State.Entry>
                         <Sequence sap:VirtualizedContainerService.HintSize="450,224" sap2010:WorkflowViewState.IdRef="Sequence_2">
                           <sap:WorkflowViewStateService.ViewState>
