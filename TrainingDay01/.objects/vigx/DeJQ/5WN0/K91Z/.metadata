@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Save File",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "K91ZktnC3kqsvnor90wqIw",
+  "Reference": "ThIhO9gzQUajJEwHZP_S1g/K91ZktnC3kqsvnor90wqIw",
+  "ParentRef": "ThIhO9gzQUajJEwHZP_S1g/5WN0udmMeUqdSJpQWLlCqg",
+  "Created": "2024-07-09T07:52:40.0273558Z",
+  "Updated": "2024-07-09T07:52:56.6311944Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yVlzgZ4hmkmFRYOvHRbPSQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="b1a84c48-b9d6-4050-a6db-dab311d3ffab" CvTextArea="43, 129, 71, 12" CvTextArgument="Save link as..." CvType="Text" DesignTimeRectangle="24, 121, 265, 28" DesignTimeScaleFactor="1" FriendlyName="'Save link as…'" FullSelectorArgument="&lt;ctrl name='Save link as…' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Save link as…' role='menu item' automationid='' check:text='Save link as…' /&gt;" Guid="5f892888-356a-48a8-bcda-8844ad8ea4dd" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b1a84c48-b9d6-4050-a6db-dab311d3ffab" CvTextArea="43, 157, 95, 15" CvTextArgument="Copy link address" CvType="Text" DesignTimeRectangle="24, 149, 265, 28" FriendlyName="'Copy link address'" FullSelectorArgument="&lt;ctrl name='Copy link address' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Copy link address' role='menu item' automationid='' check:text='Copy link address' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5a7ca7bbbbd3500e2b557bc324bf8b52.png" xmlns="">0rJ1YN7tx8UqGQ_5vhmloXw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

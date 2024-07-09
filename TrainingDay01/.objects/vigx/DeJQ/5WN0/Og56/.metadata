@@ -1,0 +1,16 @@
+﻿{
+  "Name": "File Name",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "Og565-NSRkyip3PejojsRQ",
+  "Reference": "ThIhO9gzQUajJEwHZP_S1g/Og565-NSRkyip3PejojsRQ",
+  "ParentRef": "ThIhO9gzQUajJEwHZP_S1g/5WN0udmMeUqdSJpQWLlCqg",
+  "Created": "2024-07-09T07:51:50.041622Z",
+  "Updated": "2024-07-09T07:52:16.8403105Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

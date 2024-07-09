@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Save Link As",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "BxuJoi0cG0ehPGlleiMJWA",
+  "Reference": "ThIhO9gzQUajJEwHZP_S1g/BxuJoi0cG0ehPGlleiMJWA",
+  "ParentRef": "ThIhO9gzQUajJEwHZP_S1g/eseDQw5fEkqH33WKJV_5tQ",
+  "Created": "2024-07-09T07:48:02.3666735Z",
+  "Updated": "2024-07-09T07:49:29.9699758Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
