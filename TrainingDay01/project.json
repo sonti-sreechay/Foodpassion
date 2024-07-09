@@ -2,7 +2,7 @@
   "name": "TrainingDay01",
   "projectId": "8fada964-1dfd-4eb8-9f43-bb0d274f2a54",
   "description": "Training Day 01",
-  "main": "Main.xaml",
+  "main": "StateMachine01.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.4]",
     "UiPath.Mail.Activities": "[1.21.1]",
@@ -50,8 +50,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "a2d518d1-ef38-4369-96c0-44fa455206e1",
+      "filePath": "StateMachine01.xaml",
+      "uniqueId": "a4619148-b123-44f3-90cc-c9407e4f40ac",
       "input": [],
       "output": []
     }
