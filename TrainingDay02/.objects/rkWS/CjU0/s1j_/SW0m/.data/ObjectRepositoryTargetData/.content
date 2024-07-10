@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="oKv5OK83vEWBRk6p_ACKAQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="72ace7e7-e9c5-4521-9c80-debccfd539fe" CvElementArea="7, 50, 618, 420" CvType="InputBox" DesignTimeRectangle="8, 51, 616, 419" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;wnd aaname='Text Editor' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Text Editor' cls='Edit' /&gt;&lt;ctrl name='Text Editor' role='editable text' automationid='' /&gt;" Guid="df5c8b2f-0e25-41f8-a082-5ae84c7c6b21" ScopeSelectorArgument="&lt;wnd app='notepad.exe' cls='Notepad' title='Untitled - Notepad' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3841c7db04b3286619ad83af39f7b173.png" xmlns="">0LmIjbIivMk69GsVtKTNs3w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

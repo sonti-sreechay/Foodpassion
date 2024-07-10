@@ -1,0 +1,16 @@
+﻿{
+  "Name": "EDIT_TEXT_BOX",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "SW0meVCx0EyyC6ef1Gzkrg",
+  "Reference": "YFco6TuZy06_OApOZYwVKw/SW0meVCx0EyyC6ef1Gzkrg",
+  "ParentRef": "YFco6TuZy06_OApOZYwVKw/s1j_uHnCZ0-KoMDpvjT-pA",
+  "Created": "2024-07-10T04:05:26.5503159Z",
+  "Updated": "2024-07-10T04:06:41.4604998Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

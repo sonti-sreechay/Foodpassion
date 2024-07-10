@@ -1,0 +1,16 @@
+﻿{
+  "Name": "FILE_NAME_INPUTBOX",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "TkAXoGPZFky5FQQlbW2SbQ",
+  "Reference": "YFco6TuZy06_OApOZYwVKw/TkAXoGPZFky5FQQlbW2SbQ",
+  "ParentRef": "YFco6TuZy06_OApOZYwVKw/GGoX-wesCU--eLVuWYSXOQ",
+  "Created": "2024-07-10T04:53:10.8968922Z",
+  "Updated": "2024-07-10T04:53:42.8082951Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

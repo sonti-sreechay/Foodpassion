@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ExtractMetadataObjectReference ContentHash="CZBkQl3dPUa25HU9Wc28KA" Value="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='#' attr='fulltext' /&gt;&lt;column name='ID' attr='fulltext' /&gt;&lt;column name='Due Date' attr='fulltext' /&gt;&lt;column name='Invoice' attr='fulltext' name2='Invoice Url' attr2='href' /&gt;&lt;/extract-table&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix" />

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OzT_AsuZBk6E8KMP6qLkIA" Reference="YFco6TuZy06_OApOZYwVKw/64Iy_72LdUORFQg7MSDOGQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://rpachallengeocr.azurewebsites.net/" CVScreenId="d938c513-cb87-45d7-a590-5c2a8500bd62" CvElementArea="1183, 343, 21, 21" CvType="Icon" DesignTimeRectangle="1185, 348, 14, 14" DesignTimeScaleFactor="1" FriendlyName="'SPAN'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='tableSandbox' tag='TABLE' /&gt;&lt;webctrl tableRow='{0}' tag='SPAN' /&gt;&quot;, strCounterLink)]" FuzzySelectorArgument="&lt;webctrl id='tableSandbox' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='glyphicon glyphicon-download-alt' aaname='' /&gt;" Guid="a97a9abb-83a3-4df5-8f80-c228a63b724c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="56748c7355a4119cb71781f25ed5a7db.png" xmlns="">0pAQp4N5dY0q_UIvC4pbsbQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="2" Name="strCounterLink" />
+    </scg:List>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

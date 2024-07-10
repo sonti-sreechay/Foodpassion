@@ -1,0 +1,13 @@
+﻿{
+  "Name": "DOWNLOAD_BUTTON",
+  "Type": "Element",
+  "TaxonomyType": "None",
+  "Id": "64Iy_72LdUORFQg7MSDOGQ",
+  "Reference": "YFco6TuZy06_OApOZYwVKw/64Iy_72LdUORFQg7MSDOGQ",
+  "ParentRef": "YFco6TuZy06_OApOZYwVKw/1RZ6qiiSW0qJZ4NIe0hvKw",
+  "Created": "2024-07-10T04:38:34.9085852Z",
+  "Updated": "2024-07-10T04:38:34.9085852Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ogwHvv03O06wZNtp8NCqiQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="b15f4d57-0ef9-4f86-8771-b0985846a0b6" CvTextArea="43, 129, 71, 12" CvTextArgument="Save link as..." CvType="Text" DesignTimeRectangle="24, 121, 265, 28" DesignTimeScaleFactor="1" FriendlyName="'Save link as…'" FullSelectorArgument="&lt;ctrl name='Save link as…' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Save link as…' role='menu item' automationid='' check:text='Save link as…' /&gt;" Guid="7cfb8435-84ff-42dc-ae94-ece47bc96571" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4a7d03efc7ed936f383e6e457fd0f05f.png" xmlns="">0SFaT3XbVkE-zK3l0MeHfZg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

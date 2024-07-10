@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome: Automation Challenge - OCR",
+  "Type": "Screen",
+  "Id": "1RZ6qiiSW0qJZ4NIe0hvKw",
+  "Reference": "YFco6TuZy06_OApOZYwVKw/1RZ6qiiSW0qJZ4NIe0hvKw",
+  "ParentRef": "YFco6TuZy06_OApOZYwVKw/sXPdFeA4GU22jYTQATVoUA",
+  "Created": "2024-07-10T04:38:34.8662765Z",
+  "Updated": "2024-07-10T04:38:34.8662765Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

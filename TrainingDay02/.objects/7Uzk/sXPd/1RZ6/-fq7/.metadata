@@ -1,0 +1,16 @@
+﻿{
+  "Name": "SAVE_LINK_AS_MENU",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "-fq7LJQtsEim7NgwAj2vXA",
+  "Reference": "YFco6TuZy06_OApOZYwVKw/-fq7LJQtsEim7NgwAj2vXA",
+  "ParentRef": "YFco6TuZy06_OApOZYwVKw/1RZ6qiiSW0qJZ4NIe0hvKw",
+  "Created": "2024-07-10T04:50:22.3110084Z",
+  "Updated": "2024-07-10T04:51:13.4689103Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
