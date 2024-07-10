@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="H9yoYqqoOkKiaTzStqgo5A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://rpachallengeocr.azurewebsites.net/" DesignTimeRectangle="1260, 441, 42, 29" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe Automation'" Guid="418824b3-43d4-4e50-b585-f047d42f6b92" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACoAAAAdCAYAAADcvP5OAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADuSURBVFhH7ZMBCoMwDAD3p77LfqX4k/qFfUB8huAfsqRpbAtjWyU6NnIgxVjNJak3+BFMVBsT1cZEtTFRbf5PdBkdOBdgyfcExfy05bs+et/tFG0/flx0gzicKTpGTOAhriVWki0QsBAqxjnZ0wptk09Tuae13veeTlEc/Bx4zTGWYKEwpzDvGSJGCSqAjoysxOkdFUHuRBGtuylX1a01gsfYXshVoikxdiw2oi/GSB1G0SJ2lSjC502SceL9eRKTMcvIac/zs/sJh0VZoE5Wj1+EONac3VxA+t4ZP9O3MVFtTFQbE9XGRLUxUV0AHmCaZAHA/Sv9AAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fc18304834620709bd701943d1f98f78.png" xmlns="">00EdFeRKmWUWbIv0UHVEw7Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

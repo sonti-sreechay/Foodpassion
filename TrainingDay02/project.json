@@ -2,8 +2,10 @@
   "name": "TrainingDay02",
   "projectId": "3cac0d14-447c-4de4-a245-a83bc0621354",
   "description": "Training Day 02",
-  "main": "Main.xaml",
+  "main": "Sequence02.xaml",
   "dependencies": {
+    "UiPath.Cryptography.Activities": "[1.5.0]",
+    "UiPath.Database.Activities": "[1.7.1]",
     "UiPath.Excel.Activities": "[2.22.4]",
     "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.System.Activities": "[23.10.6]",
@@ -50,8 +52,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "a26a16c8-9428-4677-8e90-f61f944b9b55",
+      "filePath": "Sequence02.xaml",
+      "uniqueId": "35b09e97-11d2-4a94-8f21-acdd8fca1a92",
       "input": [],
       "output": []
     }

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "BUTTON1",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "hexwjtlJDk-eC4ONW3TBWw",
+  "Reference": "YFco6TuZy06_OApOZYwVKw/hexwjtlJDk-eC4ONW3TBWw",
+  "ParentRef": "YFco6TuZy06_OApOZYwVKw/1RZ6qiiSW0qJZ4NIe0hvKw",
+  "Created": "2024-07-10T07:47:40.5042716Z",
+  "Updated": "2024-07-10T07:56:05.8583116Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Sequence02" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="830,3884" sap2010:WorkflowViewState.IdRef="Sequence02_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence02" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1350,3966" sap2010:WorkflowViewState.IdRef="Sequence02_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -103,9 +103,10 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence02" sap:VirtualizedContainerService.HintSize="840,3819" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequence02" sap:VirtualizedContainerService.HintSize="1360,3901" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="intCounter" />
       <Variable x:TypeArguments="x:String" Name="strCounterLink" />
@@ -120,8 +121,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[dtInvoiceListResult]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="778,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;NO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;DUE_DATE&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <Assign sap:VirtualizedContainerService.HintSize="778,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+    <ui:BuildDataTable DataTable="[dtInvoiceListResult]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1298,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;NO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ID&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;DUE_DATE&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <Assign sap:VirtualizedContainerService.HintSize="1298,82" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[strFilePath]</OutArgument>
       </Assign.To>
@@ -129,13 +130,13 @@
         <InArgument x:TypeArguments="x:String">C:\Users\Sontis\Desktop\UiPath_Training\Invoice\</InArgument>
       </Assign.Value>
     </Assign>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Chrome: Automation Challenge - OCR" sap:VirtualizedContainerService.HintSize="778,3292" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="af6821a1-3e7d-4782-95aa-91b262b2ca7d" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Chrome: Automation Challenge - OCR" sap:VirtualizedContainerService.HintSize="1298,3374" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="af6821a1-3e7d-4782-95aa-91b262b2ca7d" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="744,3075" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1264,3157" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="intPageCount" />
             </Sequence.Variables>
@@ -144,12 +145,12 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NExtractData AppendResults="False" DataTable="[dtPageCounter]" DisplayName="Extract Table Data 'PAGE_COUNTER'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='PAGE_COUNT'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='a' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="682,157" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="af6821a1-3e7d-4782-95aa-91b262b2ca7d" Version="V3">
+            <uix:NExtractData AppendResults="False" DataTable="[dtPageCounter]" DisplayName="Extract Table Data 'PAGE_COUNTER'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='PAGE_COUNT'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='a' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="1202,157" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="af6821a1-3e7d-4782-95aa-91b262b2ca7d" Version="V3">
               <uix:NExtractData.Target>
                 <uix:TargetAnchorable ContentHash="F1OGnw3qVkmL8j6SjpOU_Q" DesignTimeRectangle="1159, 449, 97, 12" DesignTimeScaleFactor="0.800000011920929" FriendlyName="'PAGE_COUNTER'" FullSelectorArgument="&lt;webctrl parentid='tableSandbox_paginate' tag='SPAN' /&gt;" Guid="6a12ae89-f521-40a3-8e91-681a9860d7c9" InformativeScreenshot="de384ec3afe6380af965d7a0eb3b77b0.png" Reference="YFco6TuZy06_OApOZYwVKw/GpG-8oJlcUyqPg8rrdlHlg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
               </uix:NExtractData.Target>
             </uix:NExtractData>
-            <Assign sap:VirtualizedContainerService.HintSize="682,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign sap:VirtualizedContainerService.HintSize="1202,82" sap2010:WorkflowViewState.IdRef="Assign_6">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[intTotalPage]</OutArgument>
               </Assign.To>
@@ -157,7 +158,7 @@
                 <InArgument x:TypeArguments="x:Int32">[dtPageCounter.RowCount]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="682,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+            <Assign sap:VirtualizedContainerService.HintSize="1202,82" sap2010:WorkflowViewState.IdRef="Assign_7">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[intPageCount]</OutArgument>
               </Assign.To>
@@ -165,15 +166,15 @@
                 <InArgument x:TypeArguments="x:Int32">1</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="682,2523" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+            <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[intPageCount &lt; intTotalPage]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="1202,2601" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="648,2360" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1168,2438" sap2010:WorkflowViewState.IdRef="Sequence_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign sap:VirtualizedContainerService.HintSize="606,25" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign sap:VirtualizedContainerService.HintSize="1126,82" sap2010:WorkflowViewState.IdRef="Assign_1">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[intCounter]</OutArgument>
                     </Assign.To>
@@ -182,12 +183,12 @@
                     </Assign.Value>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Assign>
-                  <Assign sap:VirtualizedContainerService.HintSize="606,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign sap:VirtualizedContainerService.HintSize="1126,82" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[strCounterLink]</OutArgument>
                     </Assign.To>
@@ -201,7 +202,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Assign>
-                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtInvoiceTableList]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='#' ReferenceIdx='0' Name='NO'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='ID' ReferenceIdx='1' Name='ID'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Due Date' ReferenceIdx='2' Name='DUE_DATE'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Invoice' ReferenceIdx='3' Name='Invoice' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Invoice Url' ReferenceIdx='4' Name='Invoice Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='#' attr='fulltext' /&gt;&lt;column name='ID' attr='fulltext' /&gt;&lt;column name='Due Date' attr='fulltext' /&gt;&lt;column name='Invoice' attr='fulltext' name2='Invoice Url' attr2='href' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="606,25" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="af6821a1-3e7d-4782-95aa-91b262b2ca7d" Version="V3">
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dtInvoiceTableList]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='#' ReferenceIdx='0' Name='NO'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='ID' ReferenceIdx='1' Name='ID'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Due Date' ReferenceIdx='2' Name='DUE_DATE'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Invoice' ReferenceIdx='3' Name='Invoice' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Invoice Url' ReferenceIdx='4' Name='Invoice Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='#' attr='fulltext' /&gt;&lt;column name='ID' attr='fulltext' /&gt;&lt;column name='Due Date' attr='fulltext' /&gt;&lt;column name='Invoice' attr='fulltext' name2='Invoice Url' attr2='href' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="1126,25" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="af6821a1-3e7d-4782-95aa-91b262b2ca7d" Version="V3">
                     <uix:NExtractData.Target>
                       <uix:TargetAnchorable ContentHash="v5B29PsCB0a9Fh6CE0fvsg" DesignTimeRectangle="522, 255, 834, 158" DesignTimeScaleFactor="0.800000011920929" FriendlyName="'INV_TABLE_LIST'" FullSelectorArgument="&lt;webctrl id='tableSandbox' tag='TABLE' /&gt;" Guid="a011be7f-42b8-4c7e-b3c2-9478272bd34b" InformativeScreenshot="27f6a6b21f58eb271582f6e4eff84397.png" Reference="YFco6TuZy06_OApOZYwVKw/rtNFt8WHV0CAhL97ZUs19g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                     </uix:NExtractData.Target>
@@ -212,65 +213,112 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NExtractData>
-                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtInvoiceTableList]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="606,1760" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtInvoiceTableList]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1126,1649" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                     <ui:ForEachRow.Body>
                       <ActivityAction x:TypeArguments="sd:DataRow">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="572,1547" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1092,1436" sap2010:WorkflowViewState.IdRef="Sequence_3">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DOWNLOAD_BUTTON'" sap:VirtualizedContainerService.HintSize="530,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="af6821a1-3e7d-4782-95aa-91b262b2ca7d" Version="V3">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DOWNLOAD_BUTTON'" sap:VirtualizedContainerService.HintSize="1050,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="af6821a1-3e7d-4782-95aa-91b262b2ca7d" Version="V3">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="https://rpachallengeocr.azurewebsites.net/" CVScreenId="d938c513-cb87-45d7-a590-5c2a8500bd62" ContentHash="OzT_AsuZBk6E8KMP6qLkIA" CvElementArea="1183, 343, 21, 21" CvType="Icon" DesignTimeRectangle="1185, 348, 14, 14" DesignTimeScaleFactor="1" FriendlyName="'DOWNLOAD_BUTTON'" FullSelectorArgument="[string.Format(&quot;&lt;webctrl id='tableSandbox' tag='TABLE' /&gt;&lt;webctrl tableRow='{0}' tag='SPAN' /&gt;&quot;, strCounterLink)]" FuzzySelectorArgument="&lt;webctrl id='tableSandbox' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='glyphicon glyphicon-download-alt' aaname='' /&gt;" Guid="a97a9abb-83a3-4df5-8f80-c228a63b724c" InformativeScreenshot="56748c7355a4119cb71781f25ed5a7db.png" Reference="YFco6TuZy06_OApOZYwVKw/64Iy_72LdUORFQg7MSDOGQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SAVE_LINK_AS_MENU'" sap:VirtualizedContainerService.HintSize="530,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" Version="V3">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SAVE_LINK_AS_MENU'" sap:VirtualizedContainerService.HintSize="1050,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" Version="V3">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable CVScreenId="b15f4d57-0ef9-4f86-8771-b0985846a0b6" ContentHash="ogwHvv03O06wZNtp8NCqiQ" CvTextArea="43, 129, 71, 12" CvTextArgument="Save link as..." CvType="Text" DesignTimeRectangle="24, 121, 265, 28" DesignTimeScaleFactor="1" FriendlyName="'Save link as…'" FullSelectorArgument="&lt;ctrl name='Save link as…' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Save link as…' role='menu item' automationid='' check:text='Save link as…' /&gt;" Guid="7cfb8435-84ff-42dc-ae94-ece47bc96571" InformativeScreenshot="4a7d03efc7ed936f383e6e457fd0f05f.png" Reference="YFco6TuZy06_OApOZYwVKw/-fq7LJQtsEim7NgwAj2vXA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Save File As" sap:VirtualizedContainerService.HintSize="530,1065" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="16024b08-e456-45ce-98da-73d152b231d7" Version="V2">
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Save File As" sap:VirtualizedContainerService.HintSize="1050,954" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="16024b08-e456-45ce-98da-73d152b231d7" Version="V2">
                             <uix:NApplicationCard.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,774" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,663" sap2010:WorkflowViewState.IdRef="Sequence_4">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'FILE_NAME_INPUTBOX'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[strFilePath + &quot;Invoice&quot;+strCounterLink+&quot;.jpg&quot;]" Version="V3">
-                                    <uix:NTypeInto.Target>
-                                      <uix:TargetAnchorable CVScreenId="3c62db22-4385-411e-adac-589072adaa9a" ContentHash="ZQycsjCPSEee7npDjvRbeQ" CvElementArea="131, 422, 729, 25" CvType="InputBox" DesignTimeRectangle="136, 426, 703, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'3.jpg'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="110011c1-8baa-4897-a893-757b9e2b5c4b" InformativeScreenshot="e1ceaefaa0380325f3b9b446e44d67f2.png" Reference="YFco6TuZy06_OApOZYwVKw/TkAXoGPZFky5FQQlbW2SbQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
-                                    </uix:NTypeInto.Target>
-                                  </uix:NTypeInto>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SAVE_BUTTON'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable CVScreenId="8fd2acc1-1367-4945-bea4-bfa04d5931e2" ContentHash="nmLgAK02BkmVzQPSBjaL_Q" CvElementArea="659, 491, 88, 26" CvTextArea="690, 497, 26, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="659, 491, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' check:text='unchecked' /&gt;" Guid="9e70559b-d961-426d-a748-06aa09c855c6" InformativeScreenshot="833d6a0eb40f22a4b4add2df99d6882c.png" Reference="YFco6TuZy06_OApOZYwVKw/z7J_GedNhUKbcOSKHgUWuw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
-                                    </uix:NClick.Target>
-                                  </uix:NClick>
-                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                  <uix:NCheckState DisplayName="Check App State 'FILE_NAME_INPUTBOX'" sap:VirtualizedContainerService.HintSize="954,418" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="16024b08-e456-45ce-98da-73d152b231d7" Version="V3">
+                                    <uix:NCheckState.IfExists>
+                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,201" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'FILE_NAME_INPUTBOX'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[strFilePath + &quot;Invoice&quot;+strCounterLink+&quot;.jpg&quot;]" Version="V3">
+                                          <uix:NTypeInto.Target>
+                                            <uix:TargetAnchorable CVScreenId="3c62db22-4385-411e-adac-589072adaa9a" ContentHash="ZQycsjCPSEee7npDjvRbeQ" CvElementArea="131, 422, 729, 25" CvType="InputBox" DesignTimeRectangle="136, 426, 703, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'3.jpg'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="110011c1-8baa-4897-a893-757b9e2b5c4b" InformativeScreenshot="e1ceaefaa0380325f3b9b446e44d67f2.png" Reference="YFco6TuZy06_OApOZYwVKw/TkAXoGPZFky5FQQlbW2SbQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                          </uix:NTypeInto.Target>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uix:NTypeInto>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SAVE_BUTTON'" sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable CVScreenId="8fd2acc1-1367-4945-bea4-bfa04d5931e2" ContentHash="nmLgAK02BkmVzQPSBjaL_Q" CvElementArea="659, 491, 88, 26" CvTextArea="690, 497, 26, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="659, 491, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' check:text='unchecked' /&gt;" Guid="9e70559b-d961-426d-a748-06aa09c855c6" InformativeScreenshot="833d6a0eb40f22a4b4add2df99d6882c.png" Reference="YFco6TuZy06_OApOZYwVKw/z7J_GedNhUKbcOSKHgUWuw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </uix:NCheckState.IfExists>
+                                    <uix:NCheckState.IfNotExists>
+                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Sequence>
+                                    </uix:NCheckState.IfNotExists>
+                                    <uix:NCheckState.Target>
+                                      <uix:TargetAnchorable CVScreenId="3c62db22-4385-411e-adac-589072adaa9a" ContentHash="ZQycsjCPSEee7npDjvRbeQ" CvElementArea="131, 422, 729, 25" CvType="InputBox" DesignTimeRectangle="136, 426, 703, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'FILE_NAME_INPUTBOX'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="110011c1-8baa-4897-a893-757b9e2b5c4b" InformativeScreenshot="e1ceaefaa0380325f3b9b446e44d67f2.png" Reference="YFco6TuZy06_OApOZYwVKw/TkAXoGPZFky5FQQlbW2SbQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                                    </uix:NCheckState.Target>
+                                  </uix:NCheckState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="954,25" sap2010:WorkflowViewState.IdRef="Assign_3">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:Int32">[intCounter]</OutArgument>
                                     </Assign.To>
                                     <Assign.Value>
                                       <InArgument x:TypeArguments="x:Int32">[intCounter + 1]</InArgument>
                                     </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
                                   </Assign>
-                                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                  <Assign sap:VirtualizedContainerService.HintSize="954,25" sap2010:WorkflowViewState.IdRef="Assign_4">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[strCounterLink]</OutArgument>
                                     </Assign.To>
                                     <Assign.Value>
                                       <InArgument x:TypeArguments="x:String">[intCounter.ToString]</InArgument>
                                     </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
                                   </Assign>
                                 </Sequence>
                               </ActivityAction>
@@ -289,7 +337,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ForEachRow>
-                  <ui:MergeDataTable Destination="[dtInvoiceListResult]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="606,25" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[dtInvoiceTableList]">
+                  <ui:MergeDataTable Destination="[dtInvoiceListResult]" DisplayName="Merge Data Table" sap:VirtualizedContainerService.HintSize="1126,25" sap2010:WorkflowViewState.IdRef="MergeDataTable_1" MissingSchemaAction="Add" Source="[dtInvoiceTableList]">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -297,18 +345,18 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:MergeDataTable>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NEXT_BUTTON'" sap:VirtualizedContainerService.HintSize="606,25" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NEXT_BUTTON'" sap:VirtualizedContainerService.HintSize="1126,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://rpachallengeocr.azurewebsites.net/" CVScreenId="d938c513-cb87-45d7-a590-5c2a8500bd62" ContentHash="RlHUfUyWPEyTLtR9R7sq_Q" CvTextArea="1253, 535, 31, 13" CvTextArgument="Next" CvType="Text" DesignTimeRectangle="1239, 524, 59, 36" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='tableSandbox_next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tableSandbox_next' tag='A' type='' class='paginate_button next' aaname='Next' check:innerText='Next' /&gt;" Guid="b3d1da31-1f4c-414d-849b-7aa23483d833" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD8AAAAoCAYAAABJjCL8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEtSURBVGhD7ZTbDcMgDEW7E3OFVVA2gRk6QJQxImUHlzd2SH9aPoLsI6HKQNIcuPACxog8V0SeKyLPFZHnishzReS5IvJcGSS/g1EK1LrnunE6DWqxcOb6d8J/aLBHLgcwVt43s+WuDBN5DWb1osr4qtHLn2CXtFCxobF9DX34+bSo2r3r4t4t8K8MlbdHFkPxp/JpXLu2FFG4zqfjdOzhOx8/7LCg0e4Q+c3cHIGLVJgTahd+ryl4urwnCucPx/Kpv8W3NSqV4n+N9yTyJb4hsp18t/M9RR4fj4nkPTn+ekHCMdL0Quwoc0r86ztnkvfUmNfd7i9EuiDhPS3uMQH12cnkqyyJehJs572If59Lbn9U/8sg+TkRea6IPFdEnisizxWR54rIc0XkeQLwAQpZaXDFWawvAAAAAElFTkSuQmCC" InformativeScreenshot="c1dc0d9144f9a60f604f190f0d23e9b4.png" Reference="YFco6TuZy06_OApOZYwVKw/HhEW_cMPYEmyNbpGUlnhYg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                     </uix:NClick.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
-                  <uix:NCheckElement Result="{x:Null}" DelayBefore="0" DisplayName="Check Element 'NEXT_BUTTON'" sap:VirtualizedContainerService.HintSize="606,25" sap2010:WorkflowViewState.IdRef="NCheckElement_1" ScopeIdentifier="af6821a1-3e7d-4782-95aa-91b262b2ca7d" Version="V3">
+                  <uix:NCheckElement Result="{x:Null}" DelayBefore="0" DisplayName="Check Element 'NEXT_BUTTON'" sap:VirtualizedContainerService.HintSize="1126,25" sap2010:WorkflowViewState.IdRef="NCheckElement_1" ScopeIdentifier="af6821a1-3e7d-4782-95aa-91b262b2ca7d" Version="V3">
                     <uix:NCheckElement.Target>
                       <uix:TargetAnchorable BrowserURL="https://rpachallengeocr.azurewebsites.net/" CVScreenId="d938c513-cb87-45d7-a590-5c2a8500bd62" ContentHash="RlHUfUyWPEyTLtR9R7sq_Q" CvTextArea="1253, 535, 31, 13" CvTextArgument="Next" CvType="Text" DesignTimeRectangle="1239, 524, 59, 36" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'NEXT_BUTTON'" FullSelectorArgument="&lt;webctrl id='tableSandbox_next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tableSandbox_next' tag='A' type='' class='paginate_button next' aaname='Next' check:innerText='Next' /&gt;" Guid="b3d1da31-1f4c-414d-849b-7aa23483d833" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD8AAAAoCAYAAABJjCL8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEtSURBVGhD7ZTbDcMgDEW7E3OFVVA2gRk6QJQxImUHlzd2SH9aPoLsI6HKQNIcuPACxog8V0SeKyLPFZHnishzReS5IvJcGSS/g1EK1LrnunE6DWqxcOb6d8J/aLBHLgcwVt43s+WuDBN5DWb1osr4qtHLn2CXtFCxobF9DX34+bSo2r3r4t4t8K8MlbdHFkPxp/JpXLu2FFG4zqfjdOzhOx8/7LCg0e4Q+c3cHIGLVJgTahd+ryl4urwnCucPx/Kpv8W3NSqV4n+N9yTyJb4hsp18t/M9RR4fj4nkPTn+ekHCMdL0Quwoc0r86ztnkvfUmNfd7i9EuiDhPS3uMQH12cnkqyyJehJs572If59Lbn9U/8sg+TkRea6IPFdEnisizxWR54rIc0XkeQLwAQpZaXDFWawvAAAAAElFTkSuQmCC" InformativeScreenshot="c1dc0d9144f9a60f604f190f0d23e9b4.png" Reference="YFco6TuZy06_OApOZYwVKw/HhEW_cMPYEmyNbpGUlnhYg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                     </uix:NCheckElement.Target>
@@ -319,7 +367,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NCheckElement>
-                  <Assign sap:VirtualizedContainerService.HintSize="606,25" sap2010:WorkflowViewState.IdRef="Assign_8">
+                  <Assign sap:VirtualizedContainerService.HintSize="1126,25" sap2010:WorkflowViewState.IdRef="Assign_8">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[intPageCount]</OutArgument>
                     </Assign.To>
@@ -335,9 +383,6 @@
                   </Assign>
                 </Sequence>
               </ui:InterruptibleDoWhile.Body>
-              <ui:InterruptibleDoWhile.Condition>
-                <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="intPageCount &lt; intTotalPage" />
-              </ui:InterruptibleDoWhile.Condition>
             </ui:InterruptibleDoWhile>
           </Sequence>
         </ActivityAction>
@@ -346,6 +391,6 @@
         <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="CI0r6UzguE6RTBCqwr0X7g" IconBase64="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" InformativeScreenshot="cef8ccabb6710864d09dfa9bde061baa.jpg" Reference="YFco6TuZy06_OApOZYwVKw/1RZ6qiiSW0qJZ4NIe0hvKw" Selector="&lt;html app='chrome.exe' title='Automation Challenge - OCR' /&gt;" Title="Automation Challenge - OCR" Url="https://rpachallengeocr.azurewebsites.net/" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
-    <ui:WriteCsvFile AddHeaders="True" DataTable="[dtInvoiceListResult]" Delimitator="Comma" DisplayName="Write CSV" FilePath="C:\Users\Sontis\Desktop\UiPath_Training\Invoice\InvoiceList.csv" sap:VirtualizedContainerService.HintSize="778,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2" ShouldQuote="True" />
+    <ui:WriteCsvFile AddHeaders="True" DataTable="[dtInvoiceListResult]" Delimitator="Comma" DisplayName="Write CSV" FilePath="C:\Users\Sontis\Desktop\UiPath_Training\Invoice\InvoiceList.csv" sap:VirtualizedContainerService.HintSize="1298,154" sap2010:WorkflowViewState.IdRef="WriteCsvFile_2" ShouldQuote="True" />
   </Sequence>
 </Activity>
