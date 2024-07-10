@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INV_TABLE_LIST",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "rtNFt8WHV0CAhL97ZUs19g",
+  "Reference": "YFco6TuZy06_OApOZYwVKw/rtNFt8WHV0CAhL97ZUs19g",
+  "ParentRef": "YFco6TuZy06_OApOZYwVKw/1RZ6qiiSW0qJZ4NIe0hvKw",
+  "Created": "2024-07-10T06:54:09.4238332Z",
+  "Updated": "2024-07-10T06:54:09.4238332Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

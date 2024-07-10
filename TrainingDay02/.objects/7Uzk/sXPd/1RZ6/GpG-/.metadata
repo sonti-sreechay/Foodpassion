@@ -1,12 +1,12 @@
 ﻿{
-  "Name": "INVOICE_TABLE_LIST",
+  "Name": "PAGE_COUNTER",
   "Type": "Element",
   "TaxonomyType": "Element",
-  "Id": "-rDbrdQ-DEikLV6OPmc49g",
-  "Reference": "YFco6TuZy06_OApOZYwVKw/-rDbrdQ-DEikLV6OPmc49g",
+  "Id": "GpG-8oJlcUyqPg8rrdlHlg",
+  "Reference": "YFco6TuZy06_OApOZYwVKw/GpG-8oJlcUyqPg8rrdlHlg",
   "ParentRef": "YFco6TuZy06_OApOZYwVKw/1RZ6qiiSW0qJZ4NIe0hvKw",
-  "Created": "2024-07-10T04:47:41.602648Z",
-  "Updated": "2024-07-10T04:47:41.602648Z",
+  "Created": "2024-07-10T07:20:46.1617032Z",
+  "Updated": "2024-07-10T07:20:46.1617032Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
     "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
