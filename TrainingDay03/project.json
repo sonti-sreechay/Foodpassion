@@ -2,7 +2,7 @@
   "name": "TrainingDay03",
   "projectId": "2831b59d-41db-447e-8b32-513c7f583a2f",
   "description": "TraningDay 03",
-  "main": "Main.xaml",
+  "main": "Sequence05.xaml",
   "dependencies": {
     "UiPath.Cryptography.Activities": "[1.5.0]",
     "UiPath.Database.Activities": "[1.7.1]",
@@ -54,6 +54,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "c3068855-baeb-4b5f-99b2-4a02170a43fd",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Sequence05.xaml",
+      "uniqueId": "f67d742b-9969-4635-8ea6-019c48bd126b",
       "input": [],
       "output": []
     }

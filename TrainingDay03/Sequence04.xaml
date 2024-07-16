@@ -1,11 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Sequence04" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umao="clr-namespace:UiPath.Mail.Activities.Outlook;assembly=UiPath.Mail.Activities" xmlns:umat="clr-namespace:UiPath.Mail.Activities.Triggers;assembly=UiPath.Mail.Activities" xmlns:upt="clr-namespace:UiPath.Platform.Triggers;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence04" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:umao="clr-namespace:UiPath.Mail.Activities.Outlook;assembly=UiPath.Mail.Activities" xmlns:umat="clr-namespace:UiPath.Mail.Activities.Triggers;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="TriggerEventArgs" Type="InArgument(umat:MailEventInfo)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>674,1024</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>674,414</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Sequence04_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -76,31 +76,12 @@
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence04" sap:VirtualizedContainerService.HintSize="564,713" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequence04" sap:VirtualizedContainerService.HintSize="450,349" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:TriggerScope DisplayName="Trigger Scope" sap:VirtualizedContainerService.HintSize="502,323" sap2010:WorkflowViewState.IdRef="TriggerScope_1" SchedulingMode="Sequential">
-      <ui:TriggerScope.Action>
-        <ActivityAction x:TypeArguments="upt:TriggerArgs">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="upt:TriggerArgs" Name="args" />
-          </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="450,103" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </Sequence>
-        </ActivityAction>
-      </ui:TriggerScope.Action>
-      <ui:TriggerScope.Triggers>
-        <scg:List x:TypeArguments="Activity" Capacity="0" />
-      </ui:TriggerScope.Triggers>
-    </ui:TriggerScope>
-    <umao:OutlookMailMessagesTrigger BodyFilter="{x:Null}" Cc="{x:Null}" From="{x:Null}" SubjectFilter="{x:Null}" To="{x:Null}" Account="sonti.s@baraadv.co.th" BodyIsBuilderTabModified="False" BodyRegexOption="None" DisplayName="Outlook Mail Message Trigger" Enabled="True" sap:VirtualizedContainerService.HintSize="334,239" sap2010:WorkflowViewState.IdRef="OutlookMailMessagesTrigger_1" Importance="Any" MailFolder="Inbox" MarkAsRead="False" SchedulingMode="Sequential" SubjectIsBuilderTabModified="False" SubjectRegexOption="None" TriggerId="006e9854-05d9-4cf4-b4ee-0a2e8da41fac" WhenOutlookIsClosed="Open" />
+    <umao:OutlookMailMessagesTrigger Account="sonti.s@baraadv.co.th" BodyFilter="{x:Null}" BodyIsBuilderTabModified="False" BodyRegexOption="None" Cc="{x:Null}" DisplayName="Outlook Mail Message Trigger" Enabled="True" From="{x:Null}" sap:VirtualizedContainerService.HintSize="388,238" sap2010:WorkflowViewState.IdRef="OutlookMailMessagesTrigger_1" Importance="Any" MailFolder="Inbox" MarkAsRead="False" SchedulingMode="Sequential" SubjectFilter="{x:Null}" SubjectIsBuilderTabModified="False" SubjectRegexOption="None" To="{x:Null}" TriggerId="006e9854-05d9-4cf4-b4ee-0a2e8da41fac" WhenOutlookIsClosed="Open" />
   </Sequence>
 </Activity>

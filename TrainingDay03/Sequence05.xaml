@@ -137,6 +137,7 @@
               <Variable x:TypeArguments="x:String" Name="strInputStr" />
               <Variable x:TypeArguments="x:String" Name="strOutputStr" />
               <Variable x:TypeArguments="x:Int32" Name="intRecordCount" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dtCheckData" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -149,7 +150,7 @@
               </Assign.To>
               <Assign.Value>
                 <InArgument x:TypeArguments="x:String" xml:space="preserve">[Row.Item("First Name").ToString+ _
-Row.Item("Last Name").ToString+ _
+Row.Item("Last Name ").ToString+ _
 Row.Item("Company Name").ToString+ _
 Row.Item("Role in Company").ToString+ _
 Row.Item("Address").ToString+ _
@@ -166,12 +167,12 @@ Row.Item("Phone Number").ToString]</InArgument>
                 <InArgument x:TypeArguments="x:String">["SELECT HASH_CHECK FROM [TEST].[dbo].[CHALLENGE] WHERE HASH_CHECK = '"+strOutputStr+"'"]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ExecuteNonQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[intRecordCount]" CommandType="Text" DisplayName="Run command" ExistingDbConnection="[dtcTestDatabase]" sap:VirtualizedContainerService.HintSize="510,89" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_2" Sql="[strQueryString]">
-              <ui:ExecuteNonQuery.Parameters>
+            <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dtCheckData]" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="510,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" Sql="[strQueryString]">
+              <ui:ExecuteQuery.Parameters>
                 <scg:Dictionary x:TypeArguments="x:String, Argument" />
-              </ui:ExecuteNonQuery.Parameters>
-            </ui:ExecuteNonQuery>
-            <If Condition="[intRecordCount = 0]" sap:VirtualizedContainerService.HintSize="510,607" sap2010:WorkflowViewState.IdRef="If_1">
+              </ui:ExecuteQuery.Parameters>
+            </ui:ExecuteQuery>
+            <If Condition="[dtCheckData.RowCount = 0]" sap:VirtualizedContainerService.HintSize="510,607" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
                 <Sequence sap:VirtualizedContainerService.HintSize="476,425" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
@@ -198,7 +199,7 @@ Row.Item("Phone Number").ToString]</InArgument>
 		   ,[TRANSACTION_ID])
      VALUES
            ('"+ Row.Item("First Name").ToString+ "'
-           ,'"+ Row.Item("Last Name").ToString+ "'
+           ,'"+ Row.Item("Last Name ").ToString+ "'
            ,'"+ Row.Item("Company Name").ToString+ "'
            ,'"+ Row.Item("Role in Company").ToString+"'
            ,'"+ Row.Item("Address").ToString+ "'
