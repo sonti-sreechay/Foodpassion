@@ -6,10 +6,14 @@
     <x:Property Name="blBusinessError" Type="InOutArgument(x:Boolean)" />
     <x:Property Name="strErrorMessage" Type="InOutArgument(x:String)" />
     <x:Property Name="strTransactionID" Type="InArgument(x:String)" />
+    <x:Property Name="strConnectionString" Type="InArgument(x:String)" />
   </x:Members>
   <this:Processing_State.strTransactionID>
     <InArgument x:TypeArguments="x:String" />
   </this:Processing_State.strTransactionID>
+  <this:Processing_State.strConnectionString>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Processing_State.strConnectionString>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
@@ -152,7 +156,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:DatabaseConnect DisplayName="Connect to database" sap:VirtualizedContainerService.HintSize="606,60" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient" ConnectionString="Data Source=localhost;Initial Catalog=TEST;Integrated Security=True;Encrypt=False" DatabaseConnection="[dtcPhoneBook]" />
+            <ui:DatabaseConnect DisplayName="Connect to database" sap:VirtualizedContainerService.HintSize="606,60" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient" ConnectionString="[strConnectionString]" DatabaseConnection="[dtcPhoneBook]" />
             <Assign sap:VirtualizedContainerService.HintSize="606,83" sap2010:WorkflowViewState.IdRef="Assign_3">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[strQueryString]</OutArgument>

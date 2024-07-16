@@ -7,10 +7,14 @@
     <x:Property Name="blBusinessError" Type="InOutArgument(x:Boolean)" />
     <x:Property Name="strErrorMessage" Type="InOutArgument(x:String)" />
     <x:Property Name="strTransactionID" Type="InArgument(x:String)" />
+    <x:Property Name="strConnectionString" Type="InArgument(x:String)" />
   </x:Members>
   <this:Pre_Processing_Sate.strTransactionID>
     <InArgument x:TypeArguments="x:String" />
   </this:Pre_Processing_Sate.strTransactionID>
+  <this:Pre_Processing_Sate.strConnectionString>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Pre_Processing_Sate.strConnectionString>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
@@ -154,7 +158,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:ReadRange AddHeaders="True" DataTable="[dtPhoneBook]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="586,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1" SheetName="Sheet1" WorkbookPath="[strFilePath + strFileName]" />
-          <ui:DatabaseConnect DisplayName="Connect to database" sap:VirtualizedContainerService.HintSize="586,60" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient" ConnectionString="Data Source=localhost;Initial Catalog=TEST;Integrated Security=True;Encrypt=False" DatabaseConnection="[dtcTestDatabase]" />
+          <ui:DatabaseConnect DisplayName="Connect to database" sap:VirtualizedContainerService.HintSize="586,60" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient" ConnectionString="[strConnectionString]" DatabaseConnection="[dtcTestDatabase]" />
           <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtPhoneBook]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,1517" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
