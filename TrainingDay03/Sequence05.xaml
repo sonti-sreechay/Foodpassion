@@ -167,7 +167,7 @@ Row.Item("Phone Number").ToString]</InArgument>
                 <InArgument x:TypeArguments="x:String">["SELECT HASH_CHECK FROM [TEST].[dbo].[CHALLENGE] WHERE HASH_CHECK = '"+strOutputStr+"'"]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dtCheckData]" DisplayName="Run query" sap:VirtualizedContainerService.HintSize="510,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" Sql="[strQueryString]">
+            <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[dtCheckData]" DisplayName="Run query" ExistingDbConnection="[dtcTestDatabase]" sap:VirtualizedContainerService.HintSize="510,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" Sql="[strQueryString]">
               <ui:ExecuteQuery.Parameters>
                 <scg:Dictionary x:TypeArguments="x:String, Argument" />
               </ui:ExecuteQuery.Parameters>
