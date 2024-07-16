@@ -88,13 +88,13 @@
     </sap:WorkflowViewStateService.ViewState>
     <State x:Name="__ReferenceID3" DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="165,89" sap2010:WorkflowViewState.IdRef="State_2">
       <State.Entry>
-        <Sequence sap:VirtualizedContainerService.HintSize="541,504" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence sap:VirtualizedContainerService.HintSize="541,535" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,240" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+          <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,271" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
             <ui:MultipleAssign.AssignOperations>
               <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                 <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -137,16 +137,37 @@
                     <InArgument x:TypeArguments="x:String">[String.Empty]</InArgument>
                   </ui:AssignOperation.Value>
                 </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:String">[strTransactionID]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:String">[Guid.NewGuid.ToString]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
               </scg:List>
             </ui:MultipleAssign.AssignOperations>
           </ui:MultipleAssign>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Initialize_State.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="479,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Initialize_State.xaml">
             <ui:InvokeWorkflowFile.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="strFilePath">[strFilePath]</InArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="strFileName">[strFileName]</InArgument>
-              <InOutArgument x:TypeArguments="x:Boolean" x:Key="blSystemError">[blSystemError]</InOutArgument>
-              <InOutArgument x:TypeArguments="x:Boolean" x:Key="blBusinessError">[blBusinessError]</InOutArgument>
-              <InOutArgument x:TypeArguments="x:String" x:Key="strErrorMessage">[strErrorMessage]</InOutArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="strFilePath">
+                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="strFilePath" />
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="strFileName">
+                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="strFileName" />
+              </InArgument>
+              <InOutArgument x:TypeArguments="x:Boolean" x:Key="blSystemError">
+                <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="blSystemError" />
+              </InOutArgument>
+              <InOutArgument x:TypeArguments="x:Boolean" x:Key="blBusinessError">
+                <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="blBusinessError" />
+              </InOutArgument>
+              <InOutArgument x:TypeArguments="x:String" x:Key="strErrorMessage">
+                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strErrorMessage" />
+              </InOutArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="strTransactionID">
+                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="strTransactionID" />
+              </InArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
         </Sequence>
@@ -161,7 +182,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <State.Transitions>
-        <Transition DisplayName="T1" sap:VirtualizedContainerService.HintSize="450,535" sap2010:WorkflowViewState.IdRef="Transition_1">
+        <Transition DisplayName="T1" sap:VirtualizedContainerService.HintSize="450,538" sap2010:WorkflowViewState.IdRef="Transition_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:PointCollection x:Key="ConnectorLocation">320,214.5 320,244.5 163.3,244.5 163.3,299</av:PointCollection>
@@ -171,15 +192,16 @@
           </sap:WorkflowViewStateService.ViewState>
           <Transition.Condition>[(Not blSystemError) and (Not blBusinessError)]</Transition.Condition>
           <Transition.To>
-            <State x:Name="__ReferenceID2" DisplayName="Processing" sap:VirtualizedContainerService.HintSize="496,765" sap2010:WorkflowViewState.IdRef="State_3">
+            <State x:Name="__ReferenceID2" DisplayName="Processing" sap:VirtualizedContainerService.HintSize="134,62" sap2010:WorkflowViewState.IdRef="State_3">
               <State.Entry>
-                <Sequence sap:VirtualizedContainerService.HintSize="450,377" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence sap:VirtualizedContainerService.HintSize="472,647" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Pre_Processing_Sate.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Pre_Processing_Sate.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Pre_Processing_Sate.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="410,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Pre_Processing_Sate.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="BreakTriggerScopeInArgument" />
                       <InArgument x:TypeArguments="x:String" x:Key="strFilePath">
@@ -197,17 +219,47 @@
                       <InOutArgument x:TypeArguments="x:String" x:Key="strErrorMessage">
                         <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strErrorMessage" />
                       </InOutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="strTransactionID">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="strTransactionID" />
+                      </InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Processing_State.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Processing_State.xaml">
-                    <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="strFilePath">[strFilePath]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="strFileName">[strFileName]</InArgument>
-                      <InOutArgument x:TypeArguments="x:Boolean" x:Key="blSystemError">[blSystemError]</InOutArgument>
-                      <InOutArgument x:TypeArguments="x:Boolean" x:Key="blBusinessError">[blBusinessError]</InOutArgument>
-                      <InOutArgument x:TypeArguments="x:String" x:Key="strErrorMessage">[strErrorMessage]</InOutArgument>
-                    </ui:InvokeWorkflowFile.Arguments>
-                  </ui:InvokeWorkflowFile>
+                  <If Condition="[(Not blBusinessError) and (Not blSystemError)]" sap:VirtualizedContainerService.HintSize="410,383" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="376,201" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Processing_State.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Processing_State.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="strFilePath">
+                              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="strFilePath" />
+                            </InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="strFileName">
+                              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="strFileName" />
+                            </InArgument>
+                            <InOutArgument x:TypeArguments="x:Boolean" x:Key="blSystemError">
+                              <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="blSystemError" />
+                            </InOutArgument>
+                            <InOutArgument x:TypeArguments="x:Boolean" x:Key="blBusinessError">
+                              <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="blBusinessError" />
+                            </InOutArgument>
+                            <InOutArgument x:TypeArguments="x:String" x:Key="strErrorMessage">
+                              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strErrorMessage" />
+                            </InOutArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="strTransactionID">
+                              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="strTransactionID" />
+                            </InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap2010:WorkflowViewState.IdRef="Sequence_5" />
+                    </If.Else>
+                  </If>
                 </Sequence>
               </State.Entry>
               <sap:WorkflowViewStateService.ViewState>
@@ -218,7 +270,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <State.Transitions>
-                <Transition DisplayName="T2" sap:VirtualizedContainerService.HintSize="450,507" sap2010:WorkflowViewState.IdRef="Transition_2">
+                <Transition DisplayName="T2" sap:VirtualizedContainerService.HintSize="450,508" sap2010:WorkflowViewState.IdRef="Transition_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:PointCollection x:Key="ConnectorLocation">170,361 170,391 253.3,391 253.3,459</av:PointCollection>
@@ -325,6 +377,7 @@
       <Variable x:TypeArguments="x:String" Name="strFilePath" />
       <Variable x:TypeArguments="x:String" Name="strFileName" />
       <Variable x:TypeArguments="x:String" Name="strErrorMessage" />
+      <Variable x:TypeArguments="x:String" Name="strTransactionID" />
     </StateMachine.Variables>
   </StateMachine>
 </Activity>
