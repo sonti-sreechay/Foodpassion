@@ -4,6 +4,8 @@
   "description": "TraningDay 03",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Cryptography.Activities": "[1.5.0]",
+    "UiPath.Database.Activities": "[1.7.1]",
     "UiPath.Excel.Activities": "[2.22.4]",
     "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.System.Activities": "[23.10.6]",
