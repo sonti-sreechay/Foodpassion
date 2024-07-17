@@ -4,6 +4,7 @@
   "description": "RPA Challenge",
   "main": "StateMachine01.xaml",
   "dependencies": {
+    "ChromeRpaChallenge.Descriptors": "[1.0.1]",
     "UiPath.Cryptography.Activities": "[1.5.0]",
     "UiPath.Database.Activities": "[1.7.1]",
     "UiPath.Excel.Activities": "[2.22.4]",
