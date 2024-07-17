@@ -2,10 +2,11 @@
   "name": "TrainingDay04",
   "projectId": "740488e3-3adf-4613-b24e-bd2eca75596a",
   "description": "TrainingDay 04",
-  "main": "Main.xaml",
+  "main": "Sequence04.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.4]",
     "UiPath.Mail.Activities": "[1.21.1]",
+    "UiPath.MicrosoftOffice365.Activities": "[2.6.24]",
     "UiPath.System.Activities": "[23.10.6]",
     "UiPath.Testing.Activities": "[23.10.1]",
     "UiPath.UIAutomation.Activities": "[23.10.11]"
@@ -16,7 +17,6 @@
   "studioVersion": "23.10.7.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
-    "exceptionHandlerWorkflow": "GlobalHandler.xaml",
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
     "isPausable": true,
@@ -53,6 +53,18 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "a02ad79a-c272-4901-9c80-b715af38a8f0",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Sequence02.xaml",
+      "uniqueId": "7a822754-f2da-4431-9668-d6d30331df36",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Sequence04.xaml",
+      "uniqueId": "ea0f88a9-7709-4e2a-9aac-e95cc3a86c90",
       "input": [],
       "output": []
     }
